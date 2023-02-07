@@ -1,38 +1,32 @@
 public class Customer {
 
     private String name;
-    private double creditLimit;
     private String emailAddress;
+    private double creditLimit;
 
     public Customer() {
-        this("Nobody", "nobody@nowhere.com");
-
+        this("Nobody", "nobody@nowhere.com", 0.00);
     }
 
     public Customer(String name, String emailAddress) {
-        this(name, 5800, emailAddress);
+        this(name, emailAddress, 5800);
     }
 
-    public Customer(String name, double creditLimit, String emailAddress) {
-
+    public Customer(String name, String emailAddress, double creditLimit) {
         this.name = name;
-        this.creditLimit = creditLimit;
         this.emailAddress = emailAddress;
+        this.creditLimit = creditLimit;
     }
 
-    public String getName() {
-        return this.name;
+    public void printCustomerInfo() {
+        System.out.println("Name: " + this.name);
+        System.out.println("Email: " + this.emailAddress);
+        System.out.println("Credit Limit: " + this.creditLimit);
     }
-
-    public double getCreditLimit() {
-        return creditLimit;
-    }
-
-    public String getEmailAddress() {
-        return emailAddress;
-    }
-
 
 }
+
+
+
 
 

@@ -1,3 +1,4 @@
+
 public class PersonalComputer extends Product {
 
     private ComputerCase computerCase;
@@ -22,3 +23,4 @@ public class PersonalComputer extends Product {
     }
 
 }
+

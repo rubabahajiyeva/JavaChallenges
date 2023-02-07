@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
+        SmartKitchen smartKitchen = new SmartKitchen();
 
-        SmartKitchen kitchen = new SmartKitchen();
-
-        kitchen.setKitchenState(true, false, true);
-        kitchen.doKitchenWork();
+        smartKitchen.setKitchenState(true, false, true);
+        smartKitchen.doKitchenWork();
     }
 }
